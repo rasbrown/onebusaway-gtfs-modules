@@ -26,7 +26,7 @@ import org.onebusaway.gtfs.model.Route;
  * feed. Recall that {@link GtfsReader} will attempt to fill in the
  * {@link AgencyAndId#setAgencyId(String)} agencyId value for all entities
  * loaded by the reader so as to make entity ids unique across feeds. For
- * entities such as {@link Route} and {@link Trip}, the agency id will be
+ * entities such as {@link Route} and {@link org.onebusaway.gtfs.model.Trip}, the agency id will be
  * resolved automatically to any referenced {@link Agency} in the {@link Route}.
  * However, for all other entities, we need some agency id. By default, the
  * {@link Agency#getId()} of the first {@link Agency} loaded by the reader will
